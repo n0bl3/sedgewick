@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+# IntellJ IDEA #
+.idea
+
+# Mac OS specific #
+.DS_Store
