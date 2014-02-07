@@ -102,8 +102,8 @@ public class PercolationStats {
     }
 
     private class Pair {
-        private int i;
-        private int j;
+        private final int i;
+        private final int j;
 
         public Pair(int i, int j) {
             this.i = i;

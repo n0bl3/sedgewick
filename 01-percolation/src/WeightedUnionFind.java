@@ -37,6 +37,6 @@ public class WeightedUnionFind {
         return i;
     }
 
-    private int[] unions;
-    private int[] weights;
+    private final int[] unions;
+    private final int[] weights;
 }

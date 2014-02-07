@@ -382,6 +382,9 @@ public class PercolationTestCase {
         int n = 5;
         Percolation p = new Percolation(n);
 
+        p.open(5, 1);
+        p.open(5, 5);
+
         p.open(1, 1);
         p.open(1, 5);
 
@@ -398,9 +401,6 @@ public class PercolationTestCase {
         p.open(4, 3);
         p.open(4, 4);
         p.open(4, 5);
-
-        p.open(5, 1);
-        p.open(5, 5);
 
         Assert.assertTrue(p.percolates());
     }

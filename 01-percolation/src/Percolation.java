@@ -1,10 +1,10 @@
 public class Percolation {
-    private int N;
-    private boolean[] sites;
-    private WeightedQuickUnionUF percolatingSites;
-    private WeightedQuickUnionUF fullSites;
-    private int virtualTop;
-    private int virtualBottom;
+    private final int N;
+    private final boolean[] sites;
+    private final WeightedQuickUnionUF percolatingSites;
+    private final WeightedQuickUnionUF fullSites;
+    private final int virtualTop;
+    private final int virtualBottom;
 
     public Percolation(int n) {
         N = n;
@@ -98,8 +98,8 @@ public class Percolation {
     }
 
     private class Pair {
-        private int i;
-        private int j;
+        private final int i;
+        private final int j;
 
         public Pair(int i, int j) {
             this.i = i;

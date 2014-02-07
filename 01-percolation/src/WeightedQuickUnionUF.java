@@ -26,8 +26,8 @@
  *  @author Kevin Wayne
  */
 public class WeightedQuickUnionUF {
-    private int[] id;    // id[i] = parent of i
-    private int[] sz;    // sz[i] = number of objects in subtree rooted at i
+    private final int[] id;    // id[i] = parent of i
+    private final int[] sz;    // sz[i] = number of objects in subtree rooted at i
     private int count;   // number of components
 
     /**
@@ -49,7 +49,7 @@ public class WeightedQuickUnionUF {
      * Returns the number of components.
      * @return the number of components (between 1 and N)
      */
-    public int count() {
+    int count() {
         return count;
     }
 
@@ -59,7 +59,7 @@ public class WeightedQuickUnionUF {
      * @return the component identifier for the component containing site <tt>p</tt>
      * @throws java.lang.IndexOutOfBoundsException unless 0 <= p < N
      */
-    public int find(int p) {
+    int find(int p) {
         while (p != id[p])
             p = id[p];
         return p;
